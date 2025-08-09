@@ -1,7 +1,7 @@
 # Basecalling Pipeline with HAnano model
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/)
 
 This project provides an end-to-end pipeline for nanopore basecalling, featuring a hybrid deep learning architecture combining convolutional networks with recurrent layers for accurate DNA/RNA sequence identification.
 
@@ -68,5 +68,3 @@ python data_prepare.py \
 - `--n-cores 4`: Utilizes 4 CPU cores for parallel processing
 
 ---
-
-
