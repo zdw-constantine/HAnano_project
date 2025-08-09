@@ -1,4 +1,4 @@
-# Basecalling Pipeline with Deep Learning
+# Basecalling Pipeline with HAnano model
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
@@ -69,53 +69,4 @@ python data_prepare.py \
 
 ---
 
-## 🗂️ Expected Directory Structure
-```
-.
-├── data/# Raw FAST5 files
-│└── nn_input/# Processed training data
-├── models/# Checkpoints
-├── src/# Core scripts
-│├── train.py
-│├── basecall.py
-│└── data_prepare.py
-└── results/# Output FASTQ files
-```
 
----
-
-## 🧠 Architecture Details
-The model combines:
-1. **CNN Frontend**: Multi-scale feature extraction
-2. **RNN Backend**: Bidirectional GRU layers for sequence context modeling
-3. **CTC Decoder**: For base-to-signal alignment
-
-**Performance Tip**: Reduce `--batch-size` if encountering GPU memory issues.
-
----
-
-## 📜 License
-MIT License - Free for academic and commercial use with attribution.
-
----
-
-### Key Documentation Features:
-1. **Command Highlighting**: Each instruction has:
-- Copy-paste ready formatting
-- Parameter tables/notes
-- Path placeholder standardization
-
-2. **Process Flow**: Ordered as data prep → training → inference
-
-3. **Practical Notes**:
-- GPU memory warnings
-- Output format specifications
-- Parallel processing options
-
-4. **Modular Structure**: Clear directory tree helps users organize files
-
-Would you like me to add any of the following?
-- Hardware requirements
-- Example output samples
-- Troubleshooting section
-- Citation information
